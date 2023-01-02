@@ -1,0 +1,15 @@
+<form *ngIf="formGroup" [formGroup]="formGroup">
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Fill form field</mat-label>
+      <input formControlName="name" matInput="" placeholder="Name" />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Outline form field</mat-label>
+      <input formControlName="surname" matInput="" placeholder="Surname" />
+    </mat-form-field>
+  </p>
+  <button (click)="onFormSubmit()">Submit</button>
+</form>
